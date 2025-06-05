@@ -14,6 +14,9 @@ let jobQueue = [];
 let processing = false;
 
 
+app.get("/",(req,res)=>{
+  res.send("Hello World")
+})
 app.post('/ingest', (req, res) => {
   const { ids, priority } = req.body;
 
